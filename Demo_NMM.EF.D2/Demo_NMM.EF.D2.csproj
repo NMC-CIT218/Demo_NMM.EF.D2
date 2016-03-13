@@ -159,6 +159,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BreweriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -167,6 +168,10 @@
     <Compile Include="Migrations\201602262034396_initialMigration.cs" />
     <Compile Include="Migrations\201602262034396_initialMigration.Designer.cs">
       <DependentUpon>201602262034396_initialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201603121939407_abv.cs" />
+    <Compile Include="Migrations\201603121939407_abv.Designer.cs">
+      <DependentUpon>201603121939407_abv.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -190,7 +195,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Models\ClassDiagramInitial.cd" />
-    <None Include="Properties\PublishProfiles\DemoNMMEFD2.pubxml" />
+    <None Include="Properties\PublishProfiles\demo-nmm-ef-02.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -238,6 +243,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Breweries\Create.cshtml" />
+    <Content Include="Views\Breweries\Delete.cshtml" />
+    <Content Include="Views\Breweries\Details.cshtml" />
+    <Content Include="Views\Breweries\Edit.cshtml" />
+    <Content Include="Views\Breweries\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -252,6 +262,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201602262034396_initialMigration.resx">
       <DependentUpon>201602262034396_initialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201603121939407_abv.resx">
+      <DependentUpon>201603121939407_abv.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

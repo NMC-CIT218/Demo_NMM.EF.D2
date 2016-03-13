@@ -17,6 +17,7 @@ namespace Demo_NMM.EF.D2.Models
         [Required]
         public string Description { get; set; }
 
-
+        [Required]
+        public double AlcoholByVolume { get; set; }
     }
 }
